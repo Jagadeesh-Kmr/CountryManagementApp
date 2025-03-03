@@ -1,0 +1,126 @@
+.country-list-container {
+  width: 90%;
+  max-width: 700px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+}
+
+.country-list-container h2 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.add-country-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.add-country-btn:hover {
+  background: #0056b3;
+}
+
+.country-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.country-item {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.country-item:hover {
+  transform: scale(1.02);
+}
+
+.country-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn {
+  background: #28a745;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #218838;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.no-countries {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 786px) {
+  .country-list-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .country-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .action-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    width: 48%;
+  }
+}
