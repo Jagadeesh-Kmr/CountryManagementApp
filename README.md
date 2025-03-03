@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Country Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The **Country Management App** is a React-based web application that allows users to manage countries, states, and cities. Users can add, edit, and delete entities with confirmation alerts to ensure data integrity.
 
-## Available Scripts
+## Features
+### 🏳️ Country Management
+- Add a new country.
+- Edit the name of an existing country (with confirmation prompt).
+- Delete a country (also deletes associated states and cities, with confirmation alert).
 
-In the project directory, you can run:
+### 🏙️ State Management
+- Add states under a specific country.
+- Edit an existing state (with confirmation prompt).
+- Delete a state (removes all associated cities, with confirmation alert).
 
-### `npm start`
+### 🏡 City Management
+- Add cities under a specific state.
+- Delete a city (with confirmation alert).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📌 UI Components
+- **Home Screen:** Displays the list of countries and allows country management.
+- **Country List:** Lists all countries with edit, delete, and state management options.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
+### 📌 Prerequisites
+Ensure you have the following installed on your machine:
+- **Node.js** (v14 or later)
+- **Git**
+- **npm** or **yarn**
 
-### `npm test`
+### 🚀 Steps to Run Locally
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Jagadeesh-Kmr/CountryManagementApp.git
+   ```
+2. **Navigate to the project directory:**
+   ```sh
+   cd CountryManagementApp
+   ```
+3. **Install dependencies:**
+   ```sh
+   npm install  # or yarn install
+   ```
+4. **Start the development server:**
+   ```sh
+   npm start  # or yarn start
+   ```
+5. Open **http://localhost:3000/** in your browser.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+1. Click the **"Add Country"** button to add a new country.
+2. Use the **edit** button to rename a country.
+3. Click the **delete** button to remove a country (states and cities are also deleted).
+4. Click on a country to manage its states.
+5. Add, edit, or delete states within a country.
+6. Click on a state to manage its cities.
+7. Add or delete cities within a state.
 
-### `npm run build`
+## Technologies Used
+- **React.js** (Frontend UI)
+- **useState Hook** (State Management)
+- **UUID** (Unique ID Generation)
+- **CSS** (Responsive Styling with `@media` for mobile support)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deployment
+You can deploy the app using:
+```sh
+npm run build
+```
+Then, host it on **GitHub Pages**, **Vercel**, or **Netlify**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m "Added feature"`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a Pull Request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is open-source under the **MIT License**.
 
-### `npm run eject`
+---
+🎯 **Happy Coding!** 🎯
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
